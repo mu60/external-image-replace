@@ -5,7 +5,7 @@ Plugin Name: External image replace
 Plugin URI:
 Description: Replace the external image in the posted article with the media library at once.
 Author: muromuro
-Author URI: https://wiredpunch.com
+Author URI: https://github.com/mu60
 Version: 1.0.7
 License: GPLv2 or later
 Text Domain: external-image-replace
