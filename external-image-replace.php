@@ -6,7 +6,7 @@ Plugin URI:
 Description: Replace the external image in the posted article with the media library at once.
 Author: muromuro
 Author URI: https://github.com/mu60
-Version: 1.0.7
+Version: 1.0.8
 License: GPLv2 or later
 Text Domain: external-image-replace
 */
@@ -16,7 +16,9 @@ add_action("plugins_loaded", function () {
 });
 
 function include_smarty() {
-	require_once("smarty/Smarty.class.php");
+	if(!class_exists("Smarty")) {
+		require_once("smarty/Smarty.class.php");
+	}
 	$smarty = new Smarty();
 	$smarty->template_dir = plugin_dir_path( __FILE__ ) . "/templates";
 	$smarty->compile_dir = plugin_dir_path( __FILE__ ) . "/templates_c";
