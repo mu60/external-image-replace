@@ -17,7 +17,7 @@ add_action("plugins_loaded", function () {
 
 function include_smarty() {
 	if(!class_exists("Smarty")) {
-		require_once("smarty/Smarty.class.php");
+		require_once(get_template_directory()."/smarty/Smarty.class.php");
 	}
 	$smarty = new Smarty();
 	$smarty->template_dir = plugin_dir_path( __FILE__ ) . "/templates";

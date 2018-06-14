@@ -36,9 +36,8 @@ You can install this plugin directly from your WordPress dashboard:
 == Changelog ==
 
 = 1.0.8 =
-* 2018-04-26
+* 2018-06-14
 * An error in an environment already using smarty has been improved.
-* 既にsmartyを利用している環境におけるエラーを改善しました。
 
 = 1.0.7 =
 * 2018-01-26
