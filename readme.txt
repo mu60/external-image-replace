@@ -3,7 +3,7 @@ Contributors: muromuro
 Tags: post, update content, update post,
 Requires at least: 4.9.2
 Tested up to: 4.9.2
-Stable tag: 1.0.8
+Stable tag: 1.0.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,14 @@ You can install this plugin directly from your WordPress dashboard:
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.0.10 =
+* 2018-06-15
+* An error in an environment already using smarty has been improved.
+
+= 1.0.9 =
+* 2018-06-14
+* An error in an environment already using smarty has been improved.
 
 = 1.0.8 =
 * 2018-06-14
