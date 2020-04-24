@@ -108,11 +108,11 @@ class external_image_replace_get_posts {
 				wp_delete_attachment( $attach_id, true );
 				return $error_message . " " . __("Failed to generate thumbnails of images registered in the media library.", "external-image-replace") . " " . $img_src;
 			}
-			$flag = wp_update_attachment_metadata( $attach_id, $attach_data );
-			if(!$flag) {
-				wp_delete_attachment( $attach_id, true );
-				return $error_message . " " . __("Failed to register thumbnails of images registered in the media library.", "external-image-replace") . " " . $img_src;
-			}
+			//$flag = wp_update_attachment_metadata( $attach_id, $attach_data );
+			//if(!$flag) {
+			//	wp_delete_attachment( $attach_id, true );
+			//	return $error_message . " " . __("Failed to register thumbnails of images registered in the media library.", "external-image-replace") . " " . $img_src;
+			//}
 			$attach_url = wp_get_attachment_url($attach_id);
 			$post_content_temp = str_replace($img_src, $attach_url, $post_content);
 			$my_post = array(
